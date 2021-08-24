@@ -30,7 +30,7 @@ class Ship(Sprite):
     self.moving_down = False
 
   def update(self):
-    """根据移动标志调整飞船位置"""
+    """根据移动指令调整飞船位置"""
     #更新飞船而不是rect对象的值
     #屏幕坐标原点左上角，正向右下
     if self.moving_right and self.rect.right < self.screen_rect.right:
@@ -54,3 +54,4 @@ class Ship(Sprite):
     """让飞船居中屏幕底端"""
     self.rect.midbottom = self.screen_rect.midbottom
     self.x = float(self.rect.x)
+    self.y = float(self.rect.y)

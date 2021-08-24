@@ -20,6 +20,7 @@ class Alien(Sprite):
 
     #存储外星人的精确水平位置
     self.x = float(self.rect.x)
+    self.y = float(self.rect.y)
 
   def check_edges(self):
     """如果外星人位于屏幕边缘，就返回True"""

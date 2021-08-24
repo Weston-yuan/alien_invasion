@@ -85,7 +85,7 @@ class AlienInvasion:
       self.aliens.empty()
       self.bullets.empty()
 
-      #创建一群新的外星人并让飞船居中
+      #创建一群新的外星人并让飞船居中屏幕底部
       self._create_fleet()
       self.ship.center_ship()
 
